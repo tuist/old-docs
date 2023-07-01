@@ -1,5 +1,7 @@
 # Documentation 📄
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dee914f4-76ce-48db-9803-d1a1279c6289/deploy-status)](https://app.netlify.com/sites/tuist-docs/deploys)
+
 Tuist's documentation is powered by [Docusaurus](https://docusaurus.io). Originally, this documentation resided in the [tuist/tuist](https://github.com/tuist/tuist) repository but was eventually moved to its own repository. This move was made to reduce the complexity of the monorepo's setup and to make the repository more accessible for contributions.
 
 ## Development
