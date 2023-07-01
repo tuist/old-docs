@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@algolia/client-search':
+    specifier: ^4.18.0
+    version: 4.18.0
   '@docusaurus/core':
     specifier: ^2.0.0-beta.6
     version: 2.0.0-beta.6(react-dom@17.0.1)(react@17.0.1)(typescript@5.1.6)
@@ -44,9 +47,20 @@ dependencies:
   remark-external-links:
     specifier: ^8.0.0
     version: 8.0.0
+  search-insights:
+    specifier: 2.6.0
+    version: 2.6.0
   url-loader:
     specifier: ^4.1.1
     version: 4.1.1(file-loader@6.2.0)(webpack@5.88.1)
+  webpack:
+    specifier: ^5.88.1
+    version: 5.88.1
+
+devDependencies:
+  typescript:
+    specifier: ^5.1.6
+    version: 5.1.6
 
 packages:
 
@@ -9157,7 +9171,6 @@ packages:
     resolution: {integrity: sha512-zaWCozRZ6DLEWAWFrVDz1H6FVXzUSfTy5FUMWsQlU8Ym5JP9eO4xkTIROFCQvhQf61z6O/G6ugw3SgAnvvm+HA==}
     engines: {node: '>=14.17'}
     hasBin: true
-    dev: false
 
   /ua-parser-js@1.0.35:
     resolution: {integrity: sha512-fKnGuqmTBnIE+/KXSzCn4db8RTigUzw1AN0DmdU6hJovUTbYJKyqj+8Mt1c4VfRDnOVJnENmfYkIPZ946UrSAA==}
