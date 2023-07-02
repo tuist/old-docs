@@ -33,8 +33,8 @@ dependencies:
     specifier: ^1.2.5
     version: 1.2.5(react@17.0.1)
   prism-react-renderer:
-    specifier: ^1.2.1
-    version: 1.3.5(react@17.0.1)
+    specifier: ^2.0.0
+    version: 2.0.0(react@17.0.1)
   prismjs:
     specifier: ^1.29.0
     version: 1.29.0
@@ -6877,6 +6877,15 @@ packages:
     peerDependencies:
       react: '>=0.14.9'
     dependencies:
+      react: 17.0.1
+    dev: false
+
+  /prism-react-renderer@2.0.0(react@17.0.1):
+    resolution: {integrity: sha512-Pmgn/6/XaxmwSuC5InkPQ3xq7f1J/SMKdvnxAQZVE7oBH11ctIHBGc2xLWmc8g0/CG+YQwbi5JTifP01cR7kvA==}
+    peerDependencies:
+      react: '>=16.0.0'
+    dependencies:
+      clsx: 1.2.1
       react: 17.0.1
     dev: false
 
