@@ -20,7 +20,7 @@
     "@docusaurus/plugin-sitemap": "^2.4.1",
     "@docusaurus/preset-classic": "^2.4.1",
     "@docusaurus/theme-search-algolia": "^2.4.1",
-    "@mdx-js/react": "^1.6.21",
+    "@mdx-js/react": "^2.0.0",
     "clsx": "^1.2.1",
     "graphviz-react": "^1.2.5",
     "prism-react-renderer": "^2.0.0",
