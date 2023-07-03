@@ -29,6 +29,9 @@ dependencies:
   clsx:
     specifier: ^1.2.1
     version: 1.2.1
+  dracula-prism:
+    specifier: ^2.1.13
+    version: 2.1.13
   graphviz-react:
     specifier: ^1.2.5
     version: 1.2.5(react@17.0.1)
@@ -4444,6 +4447,10 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       is-obj: 2.0.0
+    dev: false
+
+  /dracula-prism@2.1.13:
+    resolution: {integrity: sha512-mgm8Nr/X0RGUz/wpha88dKN/xw0QIGK8BQmWXrzgtOp9be+qcKiFEa2J5SQ3+/WNvL5sPPtNQXPL+Vy//Q8+dg==}
     dev: false
 
   /duplexer3@0.1.5:
