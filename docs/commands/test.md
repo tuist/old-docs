@@ -48,13 +48,20 @@ One of the benefits of using Tuist over other automation tools is that developer
 
 ### Arguments
 
-| Argument               | Short | Description                                                         | Default           | Required |
-| ---------------------- | ----- | ------------------------------------------------------------------- | ----------------- | -------- |
-| `--clean`              | `-c`  | `When passed, it cleans the project before testing it.`             | False             | No       |
-| `--path`               | `-p`  | `The path to the directory that contains the project to be tested.` | Current directory | No       |
-| `--device`             | `-d`  | `Test on a specific device.`                                        |                   | No       |
-| `--os`                 | `-o`  | `Test with a specific version of the OS.`                           |                   | No       |
-| `--configuration`      | `-C`  | `The configuration to be used when building the scheme.`            |                   | No       |
-| `--skip-ui-tests`      | n/a   | `When passed, it skips testing UI Tests targets.`                   | False             | No       |
-| `--result-bundle-path` | `-T`  | `Path where test result bundle will be saved`                       |                   | No       |
-| `--retry-count`        | n/a   | `Tests will retry <number> of times until they succeed.`              | 0                 | No       |
+| Argument                     | Short | Description                                                                                                                           | Default           | Required |
+| ---------------------------- | ----- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------- | -------- |
+| `--clean`                    | `-c`  | `When passed, it cleans the project before testing it.`                                                                               | False             | No       |
+| `--path`                     | `-p`  | `The path to the directory that contains the project to be tested.`                                                                   | Current directory | No       |
+| `--device`                   | `-d`  | `Test on a specific device.`                                                                                                          |                   | No       |
+| `--os`                       | `-o`  | `Test with a specific version of the OS.`                                                                                             |                   | No       |
+| `--configuration`            | `-C`  | `The configuration to be used when building the scheme.`                                                                              |                   | No       |
+| `--skip-ui-tests`            | n/a   | `When passed, it skips testing UI Tests targets.`                                                                                     | False             | No       |
+| `--result-bundle-path`       | `-T`  | `Path where test result bundle will be saved`                                                                                         |                   | No       |
+| `--retry-count`              | n/a   | `Tests will retry <number> of times until they succeed.`                                                                              | 0                 |          |
+| `--test-plan`                | n/a   | `When passed, the test plan to run. The scheme parameter is required when a test plan is passed.`                                     |                   | No       |
+| `--test-targets`             | n/a   | `Specify which tests should run in the test-identifier* format. It is applied before --skip-testing`                                  |                   | No       |
+| `--skip-test-targets`        | n/a   | `Specify which tests should not run be passed in the test-identifier* format.`                                                        |                   | No       |
+| `--test-configurations`      | n/a   | `When a test plan is specified, specify which test configurations to use for the run. It is applied before --skip-test-configuration` |                   | No       |
+| `--skip-test-configurations` | n/a   | `When a test plan is specified, specify which test configurations to not use for the run.`                                            |                   | No       |
+
+*`test-identifier`: `TestTarget[/TestClass[/TestMethod]]`
