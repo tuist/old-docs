@@ -1,4 +1,3 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
 const remarkEmoji = require('remark-emoji')
 const remarkExternalLinks = require('remark-external-links')
 
