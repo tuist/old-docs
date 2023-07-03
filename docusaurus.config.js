@@ -18,7 +18,7 @@ module.exports = {
   themeConfig: {
     prism: {
       additionalLanguages: ['yaml', 'swift', 'ruby'],
-      theme: require('prism-react-renderer/themes/dracula'),
+      theme: require('prism-react-renderer').themes.dracula,
     },
     algolia: {
       appId: 'TKP20U9DH0',
