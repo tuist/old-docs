@@ -86,7 +86,15 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} Tuist, Inc. Built with Docusaurus.`,
     },
   },
-  plugins: [],
+  plugins: [
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: "phc_q0Ce5TUpcos4agysTuVSxcbD7c4j2G6VBdbIz0CEauQ'",
+        enableInDevelopment: false,
+      },
+    ]
+  ],
   presets: [
     [
       '@docusaurus/preset-classic',

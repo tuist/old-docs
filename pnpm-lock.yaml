@@ -32,6 +32,9 @@ dependencies:
   graphviz-react:
     specifier: ^1.2.5
     version: 1.2.5(react@17.0.1)
+  posthog-docusaurus:
+    specifier: ^2.0.0
+    version: 2.0.0
   prism-react-renderer:
     specifier: ^2.0.0
     version: 2.0.0(react@17.0.1)
@@ -6853,6 +6856,11 @@ packages:
       nanoid: 3.3.6
       picocolors: 1.0.0
       source-map-js: 1.0.2
+    dev: false
+
+  /posthog-docusaurus@2.0.0:
+    resolution: {integrity: sha512-nDSTIhmH/Fexv347Gx6wBCE97Z+fZTj0p/gqVYAaolMwSdVuzwyFWcFA+aW9uzA5Y5hjzRwwKJJOrIv8smkYkA==}
+    engines: {node: '>=10.15.1'}
     dev: false
 
   /prepend-http@2.0.0:
