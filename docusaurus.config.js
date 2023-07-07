@@ -90,7 +90,7 @@ module.exports = {
     [
       "posthog-docusaurus",
       {
-        apiKey: "phc_q0Ce5TUpcos4agysTuVSxcbD7c4j2G6VBdbIz0CEauQ'",
+        apiKey: "phc_pNR89Xu2WWDZdXReTnuePI7XO2Ktb2orTpzVWxHlBxq'",
         enableInDevelopment: false,
       },
     ]
