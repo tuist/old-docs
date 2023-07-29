@@ -81,7 +81,17 @@ module.exports = {
         {
           type: 'category',
           label: 'Commands',
-          items: ['cloud/commands/init'],
+          collapsed: false,
+          items: [
+            'cloud/commands/init',
+            {
+              type: 'category',
+              label: 'Manage projects',
+              items: [
+                'cloud/commands/project/create',
+              ],
+            },
+          ],
         },
         'cloud/contributing',
         'cloud/self-hosting',
