@@ -18,4 +18,4 @@ tuist cloud project create name-of-project --organization my-organization
 | Argument | Description | Default | Required |
 | -------- | ----------- | ------- | -------- |
 | `--organization` | The name of the organization you want to initialize the project with | Your username | No |
-| `--url` | A custom server URL. This can be useful if you don't use the official cloud.tuist.io project | https://cloud.tuist.io  | No |
+| `--server-url` | A custom server URL. This can be useful if you don't use the official cloud.tuist.io project | https://cloud.tuist.io  | No |
