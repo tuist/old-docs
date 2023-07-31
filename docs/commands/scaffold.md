@@ -54,7 +54,7 @@ tuist scaffold name_of_template --name Name --platform macos
 
 Since platform is an optional argument, we can also call the command without the `--platform macos` argument.
 
-If `.string` and `.files` don't provide enough flexibility, you can leverage the [Stencil](https://github.com/stencilproject/Stencil) templating language via the `.file` case. Besides that, you can also use additional filters defined [here](https://github.com/SwiftGen/StencilSwiftKit#filters)
+If `.string` and `.files` don't provide enough flexibility, you can leverage the [Stencil](https://github.com/stencilproject/Stencil) templating language via the `.file` case. Besides that, you can also use additional filters defined [here](https://github.com/SwiftGen/StencilSwiftKit#filters). Using string interpolation, `\(nameAttribute)` above would resolve to `{{ name }}`. If you'd like to use Stencil filters in the template definition, you can use that interpolation manually and add any filters you like. For example, you might use `{{ name|lowercase }}` instead of `\(nameAttribute)` to get the lowercased value of the name attribute.
 
 You can also use `.directory` which gives the possibility to copy entire folders to a given path.
 
