@@ -75,7 +75,7 @@ module.exports = {
     },
     {
       type: 'category',
-      label: 'Cloud',
+      label: 'Tuist Cloud',
       items: [
         'cloud/get-started',
         {
@@ -86,15 +86,50 @@ module.exports = {
             'cloud/commands/init',
             {
               type: 'category',
+              label: 'Manage your Tuist Cloud session',
+              items: [
+                'cloud/commands/auth/auth',
+                'cloud/commands/auth/session',
+                'cloud/commands/auth/logout',
+              ],
+            },
+            {
+              type: 'category',
               label: 'Manage projects',
               items: [
                 'cloud/commands/project/create',
+                'cloud/commands/project/list',
+                'cloud/commands/project/delete'
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Manage organizations',
+              items: [
+                'cloud/commands/organization/create',
+                'cloud/commands/organization/list',
+                'cloud/commands/organization/delete',
+                'cloud/commands/organization/show',
+                'cloud/commands/organization/invite',
+                {
+                  type: 'category',
+                  label: 'tuist cloud project remove',
+                  items: [
+                    'cloud/commands/organization/remove/invite',
+                    'cloud/commands/organization/remove/member',
+                  ],
+                },
+                {
+                  type: 'category',
+                  label: 'tuist cloud project update',
+                  items: [
+                    'cloud/commands/organization/update/member',
+                  ],
+                },
               ],
             },
           ],
         },
-        'cloud/contributing',
-        'cloud/self-hosting',
         'cloud/stats',
       ],
     },
