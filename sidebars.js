@@ -137,6 +137,7 @@ module.exports = {
           items: [
             'cloud/legal/privacy-policy',
             'cloud/legal/terms-of-service',
+            'cloud/legal/cookie-policy',
           ],
         },
       ],
