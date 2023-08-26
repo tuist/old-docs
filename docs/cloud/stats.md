@@ -1,5 +1,5 @@
 ---
-title: Helping Tuist
+title: Tuist stats
 slug: '/cloud/stats'
 description: Learn about Tuist Stats
 ---

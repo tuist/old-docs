@@ -131,6 +131,14 @@ module.exports = {
           ],
         },
         'cloud/stats',
+        {
+          type: 'category',
+          label: 'Legal',
+          items: [
+            'cloud/legal/privacy-policy',
+            'cloud/legal/terms-of-service',
+          ],
+        },
       ],
     },
     {
