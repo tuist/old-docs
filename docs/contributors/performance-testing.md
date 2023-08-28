@@ -6,36 +6,36 @@ description: This page describes the project's performance testing strategy.
 
 To test out generation speeds and to provide some utilities to aid profiling Tuist a few auxiliary standalone tools are available.
 
-- `fixturegen`: A tool to generate large fixtures
-- `tuistbench`: A tool to benchmark Tuist
+- `tuistfixturegenerator`: A tool to generate large fixtures
+- `tuistbenchmark`: A tool to benchmark Tuist
 
-Those tools are located within the [`projects/`](https://github.com/tuist/tuist/blob/main/projects) directory.
+Those tools are located within the root directory.
 
 ### Benchmarking
 
 As a convenience to automate the benchmarking process which entails leveraging several tools, a rake task is included with Tuist.
 
 ```sh
-./fourier benchmark
+swift run tuistbenchmark
 ```
 
 This benchmarks the current branch's version of Tuist against the latest published release using the tools described below.
 
 ### Fixture Generator
 
-`fixturegen` allows generating large fixtures. For example it can generate a workspace with 10 projects, each project with 10 targets, and each target with 500 source files!
+`tuistfixturegenerator` allows generating large fixtures. For example it can generate a workspace with 10 projects, each project with 10 targets, and each target with 500 source files!
 
 Example:
 
 ```sh
-./fourier fixture --projects 100 --targets 10 --sources 500
+swift run tuistfixturegenerator --projects 100 --targets 10 --sources 500
 ```
 
 Generating those large fixtures can be helpful in profiling Tuist and identifying any hot spots that may otherwise go unnoticed when generating smaller fixtures during development.
 
 ### Tuist Benchmark
 
-`tuistbench` has a few modes of operation:
+`tuistbenchmark` has a few modes of operation:
 
 - Measure the generation time of one or more fixtures
 - Benchmark two Tuist binaries' generation time of one or more fixtures
@@ -47,14 +47,14 @@ The results are averaged from several **cold** and **warm** runs where:
 - **cold**: Is a generation from a clean slate (no xcodeproj files exist)
 - **warm**: Is a re-generation (xcodeproj files already exist)
 
-Here are some example outputs from `tuistbench`.
+Here are some example outputs from `tuistbenchmark`.
 
 **Measurement (single fixture):**
 
 Console format:
 
 ```sh
-swift run tuistbench \
+swift run tuistbenchmark \
      --binary /path/to/tuist/.build/release/tuist \
      --fixture /path/to/fixtures/ios_app_with_tests
 
@@ -69,7 +69,7 @@ Result
 Markdown format:
 
 ```sh
-swift run tuistbench \
+swift run tuistbenchmark \
      --binary /path/to/tuist/.build/release/tuist \
      --fixture /path/to/fixtures/ios_app_with_tests \
      --format markdown
@@ -84,7 +84,7 @@ swift run tuistbench \
 Console format:
 
 ```sh
-swift run tuistbench \
+swift run tuistbenchmark \
      --binary /path/to/tuist/.build/release/tuist \
      --reference-binary $(which tuist) \
      --fixture /path/to/fixtures/ios_app_with_tests
@@ -99,7 +99,7 @@ Result
 Markdown format:
 
 ```sh
-swift run tuistbench \
+swift run tuistbenchmark \
      --binary /path/to/tuist/.build/release/tuist \
      --reference-binary $(which tuist) \
      --fixture /path/to/fixtures/ios_app_with_tests \
@@ -127,7 +127,7 @@ A fixture list `json` file is needed to specify multiple fixtures, here's an exa
 Console:
 
 ```sh
-swift run tuistbench \
+swift run tuistbenchmark \
      --binary /path/to/tuist/.build/release/tuist \
      --reference-binary $(which tuist) \
      --fixture-list fixtures.json
@@ -157,7 +157,7 @@ Result
 Markdown:
 
 ```sh
-swift run tuistbench \
+swift run tuistbenchmark \
      --binary /path/to/tuist/.build/release/tuist \
      -reference-binary $(which tuist) \
      --fixture-list fixtures.json \
