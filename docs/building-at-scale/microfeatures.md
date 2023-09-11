@@ -4,8 +4,6 @@ slug: '/building-at-scale/microfeatures'
 description: 'This document describes an approach for architecting a modular Apple OS application to enable scalability, optimize build and test cycles, and ensure good practices.'
 ---
 
-import { MicroFeature, Layers } from './components/microfeatures'
-
 uFeatures is an architectural approach to structure Apple OS applications to enable scalability, optimize build and test cycles, and ensure good practices in your team. Its core idea is to build your apps by building independent features that are interconnected using clear and concise APIs.
 
 These guidelines introduce the principles of the architecture, helping you identify and organize your application features in different layers. It also introduces tips, tools and advice if you decide to use this architecture.
@@ -54,7 +52,7 @@ The diagram below shows the dependencies between the targets:
 - **FeatureTests:** depends on `Feature` because it contains the subjects under test and test data that can be used from the test classes.
 - **FeatureExample:** depends on `FeatureTesting` to have access to the test data, and `Feature` to instantiate the implementations and showcase them from the example app.
 
-  <MicroFeature />
+![A diagram that represents the targets of a uFeature](/img/microfeature.svg)
 
 ### Why a µFeature
 
