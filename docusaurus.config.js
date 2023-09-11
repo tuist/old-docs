@@ -38,6 +38,11 @@ module.exports = {
           position: 'right',
         },
         {
+          href: 'https://docs.next.tuist.io/documentation/tuist',
+          label: 'New documentation',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/tuist/tuist',
           label: 'GitHub',
           position: 'right',
