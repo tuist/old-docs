@@ -18,7 +18,7 @@ The project is paid to help us run the servers and provide a source of income to
 
 ## Getting started
 
-You can get started with Tuist Cloud by running `tuist cloud init --name my-tuist-cloud-project` (`tuist cloud init` docs can be found [here](./commands/init)). If you are not registered yet at [cloud.tuist.io](https://cloud.tuist.io/), CLI will automatically redirect you to the sign up page. You can learn more about the command [here](commands/init). The `cloud init` command will try to automatically update your `Config.swift` or give you a snippet you can copy-paste to it:
+You can get started with Tuist Cloud by running `tuist cloud init --name my-tuist-cloud-project`. If you are not registered yet at [cloud.tuist.io](https://cloud.tuist.io/), CLI will automatically redirect you to the sign up page. The `cloud init` command will try to automatically update your `Config.swift` or give you a snippet you can copy-paste to it:
 ```swift
 import ProjectDescription
 
@@ -33,6 +33,6 @@ If you ever need to remove your Tuist Cloud credentials on your machine, you can
 
 ### CI
 
-One of the great benefits of Tuist Cloud is that you can cache your targets on CI. Use [tuist cloud project token](commands/project/token) to obtain it.
+One of the great benefits of Tuist Cloud is that you can cache your targets on CI. Use `tuist cloud project token` to obtain it.
 
 Afterwards, you can add the `TUIST_CONFIG_CLOUD_TOKEN` to your CI environment and all commands like `tuist cache warm` will then have access to the Tuist Cloud.
